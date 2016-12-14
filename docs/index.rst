@@ -20,6 +20,7 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
+* :ref:`lklsdkl`
 * :ref:`modindex`
 * :ref:`search`
 
