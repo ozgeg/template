@@ -23,3 +23,30 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+::
+
+   public void ConfigureServices(IServiceCollection services)
+   {
+            //Verilen path’e loglama yapar.
+            services.AddHubble(new HubbleConfiguration()
+            {
+                LogsFolder = "log",
+                EnableSystemLogs = false,
+                EnableNavigatingLog = true
+            });
+
+            //OPTIONAL
+            services.AddHubble(new HubbleConfiguration 
+            { 
+            EnableNavigatingLog = true 
+            });
+
+            services.AddHubbleMonitoring(new HubbleMonitoringConfiguration
+            {
+                Key = "KEY",
+                Secret = "SECRET",
+                MonitoringUrl = "url"
+            }); 
+
+
+   }
